@@ -3,7 +3,7 @@ import NavLink from "./NavLink";
 
 export default function Nav() {
   return (
-    <div className="lg:flex">
+    <div className="hidden lg:flex">
       <NavLink>
         <Link href="/">Home</Link>
       </NavLink>
