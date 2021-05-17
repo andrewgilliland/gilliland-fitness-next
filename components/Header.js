@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Nav from "./Nav";
-import NavLink from "./NavLink";
 import MobileNav from "./MobileNav";
+import Overlay from "./Overlay";
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
@@ -16,8 +16,8 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-purple-500 relative">
-      <div className="text-gray-900 px-3 py-5 flex justify-between items-center mx-auto max-w-5xl relative z-10">
+    <header className="bg-purple-600 relative">
+      <div className="text-gray-50 px-3 py-5 flex justify-between items-center mx-auto max-w-5xl relative z-10">
         <h1 className="font-bold">
           <Link href="/">Gilliland Fitness</Link>
         </h1>
@@ -25,7 +25,7 @@ export default function Header() {
         {/* TODO: Light/Dark Toggle */}
         <button
           type="button"
-          className="rounded-sm p-2 inline-flex items-center justify-center text-gray-900 hover:border focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900"
+          className="rounded-sm p-2 inline-flex items-center justify-center text-gray-50 hover:border focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50 lg:hidden"
           aria-expanded="false"
           onClick={toggle}
           onKeyPress={toggleKeyPress}
@@ -51,7 +51,7 @@ export default function Header() {
 
       {/* Mobile Nav Menu */}
       <div
-        className={`absolute top-0 inset-x-0 p-2 transition duration-200 transform origin-top-right md:hidden ${
+        className={`absolute top-0 inset-x-0 p-2 transition duration-200 transform origin-top-right lg:hidden ${
           isOpen
             ? "z-20 ease-out opacity-100 scale-100"
             : "z-0 ease-in opacity-0 scale-90"
@@ -59,7 +59,7 @@ export default function Header() {
       >
         <div className="rounded-sm shadow-md bg-gray-50  pt-4 ring-1 ring-black ring-opacity-5 overflow-hidden">
           <div className="flex justify-between items-center px-5">
-            <div className="h-10 w-10 bg-purple-500 rounded-full"></div>
+            <div className="h-10 w-10 bg-purple-600 rounded-full"></div>
             <button
               type="button"
               className="rounded-sm p-2 inline-flex items-center justify-center text-gray-900 hover:border focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900"
@@ -91,6 +91,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      <Overlay toggle={toggle} isOpen={isOpen} />
     </header>
   );
 }

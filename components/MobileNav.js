@@ -3,7 +3,7 @@ import NavLink from "./NavLink";
 
 export default function MobileNav() {
   return (
-    <nav className="my-8 text-lg space-y-2 px-5">
+    <nav className="flex flex-col items-start text-lg space-y-2 my-8 px-5">
       <NavLink>
         <Link href="/">Home</Link>
       </NavLink>
