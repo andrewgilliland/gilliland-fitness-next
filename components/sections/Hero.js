@@ -3,7 +3,7 @@ import Container from "../Container";
 export default function Hero() {
   return (
     <Container>
-      <main className="mt-16">
+      <main className="mt-16 px-8">
         <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl">
           <span className="block xl:inline">Lorem ipsum dolor sit </span>
           <br />
