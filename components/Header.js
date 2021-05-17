@@ -3,9 +3,9 @@ import Nav from "./Nav";
 
 export default function Header() {
   return (
-    <header className="bg-green-800">
-      <div className="text-gray-50 py-5 flex justify-between items-center mx-auto max-w-5xl">
-        <h1>
+    <header className="bg-green-500 border-t-2 border-green-300">
+      <div className="text-gray-900 py-5 flex justify-between items-center mx-auto max-w-5xl">
+        <h1 className="font-bold">
           <Link href="/">Gilliland Fitness</Link>
         </h1>
         <Nav />

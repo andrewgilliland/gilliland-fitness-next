@@ -1,3 +1,7 @@
 export default function NavLink({ children }) {
-  return <div className="text-gray-050 mx-4 hover:text-gray-200">{children}</div>;
+  return (
+    <div className="font-semibold lg:mx-4 transition-all duration-300 hover:underline">
+      {children}
+    </div>
+  );
 }
