@@ -5,7 +5,7 @@ export default function ContactHeader() {
     <div className="bg-gray-100 dark:bg-gray-900">
       <Container>
         <header className="py-12">
-          <div className="py-20 rounded-lg ring-1 ring-gray-900 dark:ring-purple-600 ring-opacity-5 overflow-hidden bg-white dark:bg-gray-900">
+          <div className="shadow py-20 rounded-lg ring-1 ring-gray-900 dark:ring-purple-600 ring-opacity-5 overflow-hidden bg-white dark:bg-gray-900">
             <h1 className="flex flex-col justify-center items-center text-center">
               <div className="uppercase font-bold tracking-wider text-sm text-purple-600">
                 Contact

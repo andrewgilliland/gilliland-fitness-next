@@ -1,11 +1,14 @@
-import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
 import Page from "../components/Page";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Page>
-      <Component {...pageProps} />
-    </Page>
+    <ThemeProvider attribute="class">
+      <Page>
+        <Component {...pageProps} />
+      </Page>
+    </ThemeProvider>
   );
 }
 
