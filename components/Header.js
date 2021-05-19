@@ -85,7 +85,7 @@ export default function Header() {
               </svg>
             </button>
           </div>
-          <MobileNav />
+          <MobileNav toggle={toggle} isOpen={isOpen} />
           <div className="bg-purple-600 text-gray-50 flex justify-center py-5 font-semibold text-lg hover:bg-purple-800">
             Book A Session
           </div>
