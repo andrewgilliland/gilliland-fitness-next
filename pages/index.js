@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import Hero from "../components/sections/Hero";
 
 export default function Home() {
@@ -8,7 +9,6 @@ export default function Home() {
         <title>Gilliland Fitness</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Hero />
     </div>
   );

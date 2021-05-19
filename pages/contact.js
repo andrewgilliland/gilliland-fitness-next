@@ -4,7 +4,7 @@ import ContactHeader from "../components/sections/ContactHeader";
 export default function ContactPage() {
   return (
     <>
-      <ContactHeader />
+      {/* <ContactHeader /> */}
       <Contact />
     </>
   );
