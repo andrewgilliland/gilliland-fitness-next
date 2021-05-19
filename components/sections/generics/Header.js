@@ -1,6 +1,6 @@
-import Container from "../Container";
+import Container from "../../Container";
 
-export default function ContactHeader() {
+export default function Header() {
   return (
     <div className="bg-gray-100 dark:bg-gray-900">
       <Container>
