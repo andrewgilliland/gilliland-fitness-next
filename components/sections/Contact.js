@@ -3,15 +3,15 @@ import ContactForm from "../forms/ContactForm";
 
 export default function Contact() {
   return (
-    <div className="bg-gray-100 mx-auto py-6 sm:px-6 lg:px-8">
+    <div className="bg-gray-100 dark:bg-gray-900 mx-auto py-6 sm:px-6 lg:px-8">
       <Container>
         <div className="md:grid md:grid-cols-3 md:gap-6">
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
-              <h3 className="text-lg font-medium leading-6 text-gray-900">
+              <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-50">
                 Contact
               </h3>
-              <p className="mt-1 text-sm text-gray-600">
+              <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
                 accusamus magni aliquam quis, adipisci voluptatum.
               </p>

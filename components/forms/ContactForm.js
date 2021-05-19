@@ -5,8 +5,8 @@ import Textarea from "./Textarea";
 export default function ContactForm() {
   return (
     <form className="grid" action="#" method="POST">
-      <div className="shadow sm:rounded-md sm:overflow-hidden">
-        <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
+      <div className="shadow dark:ring-1 dark:ring-purple-600 ring-opacity-5 sm:rounded-md sm:overflow-hidden">
+        <div className="px-4 py-5 bg-white dark:bg-gray-900 space-y-6 sm:p-6">
           <div className="grid grid-cols-6 gap-6">
             <div className="col-span-6 sm:col-span-3">
               <Input
@@ -42,7 +42,7 @@ export default function ContactForm() {
             </div>
           </div>
         </div>
-        <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
+        <div className="px-4 py-3 bg-gray-50 dark:bg-gray-900 text-right sm:px-6">
           <Button type="submit">Send</Button>
         </div>
       </div>

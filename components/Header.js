@@ -16,7 +16,7 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-purple-600 relative">
+    <header className="bg-purple-600 dark:bg-purple-800 relative">
       <div className="text-gray-50 px-3 py-5 flex justify-between items-center mx-auto max-w-5xl relative z-10">
         <h1 className="font-bold">
           <Link href="/">Gilliland Fitness</Link>
@@ -57,12 +57,12 @@ export default function Header() {
             : "z-0 ease-in opacity-0 scale-90"
         }`}
       >
-        <div className="rounded-sm shadow-md bg-gray-50  pt-4 ring-1 ring-black ring-opacity-5 overflow-hidden">
+        <div className="rounded-sm shadow-md bg-gray-50 dark:bg-gray-900 pt-4 ring-1 ring-black ring-opacity-5 overflow-hidden">
           <div className="flex justify-between items-center px-5">
             <div className="h-10 w-10 bg-purple-600 rounded-full"></div>
             <button
               type="button"
-              className="rounded-sm p-2 inline-flex items-center justify-center text-gray-900 hover:border focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900"
+              className="rounded-sm p-2 inline-flex items-center justify-center text-gray-900 dark:text-gray-50 hover:border focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900"
               aria-expanded="false"
               onClick={toggle}
               onKeyPress={toggleKeyPress}
@@ -86,7 +86,7 @@ export default function Header() {
             </button>
           </div>
           <MobileNav toggle={toggle} isOpen={isOpen} />
-          <div className="bg-purple-600 text-gray-50 flex justify-center py-5 font-semibold text-lg hover:bg-purple-800">
+          <div className="bg-purple-600 dark:bg-purple-800 text-gray-50 flex justify-center py-5 font-semibold text-lg transition-opacity duration-300 hover:opacity-80">
             Book A Session
           </div>
         </div>
