@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+import ThemeToggle from "./buttons/ThemeToggle";
 import Overlay from "./Overlay";
 
 export default function Header() {
@@ -23,6 +24,7 @@ export default function Header() {
         </h1>
         <Nav />
         {/* TODO: Light/Dark Toggle */}
+        <ThemeToggle mobile={false} />
         <button
           type="button"
           className="rounded-sm p-2 inline-flex items-center justify-center text-gray-50 hover:border focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50 lg:hidden"
@@ -86,6 +88,9 @@ export default function Header() {
             </button>
           </div>
           <MobileNav toggle={toggle} isOpen={isOpen} />
+          <div className="-mt-5 mb-5 transform translate-x-6">
+            <ThemeToggle mobile={true} />
+          </div>
           <div className="bg-purple-600 dark:bg-purple-800 text-gray-50 flex justify-center py-5 font-semibold text-lg transition-opacity duration-300 hover:opacity-80">
             Book A Session
           </div>

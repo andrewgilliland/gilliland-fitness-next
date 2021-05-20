@@ -1,6 +1,4 @@
-
 import Link from "next/link";
-import ThemeToggle from "./buttons/ThemeToggle";
 import NavLink from "./NavLink";
 
 export default function Nav() {
@@ -15,7 +13,6 @@ export default function Nav() {
       <NavLink>
         <Link href="/contact">Contact</Link>
       </NavLink>
-      <ThemeToggle />
     </nav>
   );
 }
