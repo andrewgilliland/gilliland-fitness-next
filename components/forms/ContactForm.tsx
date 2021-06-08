@@ -5,7 +5,7 @@ import Textarea from "./Textarea";
 export default function ContactForm() {
   return (
     <form className="grid" action="#" method="POST">
-      <div className="shadow ring-1 ring-opacity-5 ring-gray-200 dark:ring-purple-600  sm:rounded-md sm:overflow-hidden">
+      <div className="shadow ring-1 ring-opacity-5 ring-gray-200 dark:ring-purple-600 sm:rounded-md sm:overflow-hidden">
         <div className="px-4 py-5 bg-white dark:bg-gray-900 space-y-6 sm:p-6">
           <div className="grid grid-cols-6 gap-6">
             <div className="col-span-6 sm:col-span-3">
@@ -13,6 +13,7 @@ export default function ContactForm() {
                 name="firstName"
                 label="First Name"
                 type="text"
+                id="firstName"
                 placeholder="Jane"
                 required={true}
               />
@@ -38,7 +39,11 @@ export default function ContactForm() {
               />
             </div>
             <div className="col-span-6">
-              <Textarea id="message" label="Message" />
+              <Textarea
+                id="message"
+                label="Message"
+                placeholder="Say something here!"
+              />
             </div>
           </div>
         </div>

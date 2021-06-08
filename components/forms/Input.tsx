@@ -1,3 +1,12 @@
+type Props = {
+  name: string;
+  label: string;
+  type: string;
+  id: string;
+  placeholder: string;
+  required: boolean;
+};
+
 export default function Input({
   name,
   label,
@@ -5,7 +14,7 @@ export default function Input({
   id,
   placeholder,
   required,
-}) {
+}: Props) {
   return (
     <div>
       <label
