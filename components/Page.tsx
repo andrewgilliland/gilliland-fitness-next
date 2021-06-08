@@ -1,7 +1,11 @@
 import Header from "./Header";
 import Footer from "./Footer";
 
-export default function Page({ children }) {
+type Props = {
+  children: React.ReactNode;
+};
+
+export default function Page({ children }: Props) {
   return (
     <div
       className="grid min-h-screen"

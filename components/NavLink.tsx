@@ -1,4 +1,9 @@
-export default function NavLink({ children, toggle }) {
+type Props = {
+  children: React.ReactNode;
+  toggle?: () => void;
+};
+
+export default function NavLink({ children, toggle }: Props) {
   return (
     <div
       onClick={toggle}

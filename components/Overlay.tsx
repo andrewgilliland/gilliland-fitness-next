@@ -1,4 +1,9 @@
-export default function Overlay({ toggle, isOpen }) {
+type Props = {
+  toggle: () => void;
+  isOpen: boolean;
+};
+
+export default function Overlay({ toggle, isOpen }: Props) {
   return (
     <div
       onClick={toggle}
