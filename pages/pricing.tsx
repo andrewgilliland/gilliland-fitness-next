@@ -5,7 +5,7 @@ export default function PricingPage() {
   return (
     <div>
       <Head>
-        <title>Gilliland Fitness | Pricing</title>
+        <title>Pricing | Gilliland Fitness</title>
       </Head>
       <PricingHeader />
     </div>
