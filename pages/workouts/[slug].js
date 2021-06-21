@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { getWorkoutBySlug, getAllWorkouts } from "../../lib/api";
-import markdownToHtml from "../../lib/markdownToHtml";
+// import markdownToHtml from "../../lib/markdownToHtml";
 
 export default function Workout({ workout, morePosts, preview }) {
   const router = useRouter();
