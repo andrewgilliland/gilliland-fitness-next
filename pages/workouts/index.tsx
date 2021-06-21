@@ -13,20 +13,12 @@ export default function WorkoutsPage({ allWorkouts }) {
       <Head>
         <title>Workouts | Gilliland Fitness</title>
       </Head>
-      <Header
-        heading="Workouts"
-        subHeading="Take control of your team."
-        copy="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium dicta ut qui quas praesentium incidunt?"
-      />
       {/* <div>{heroWorkout && <div>{heroWorkout.title}</div>}</div> */}
-      {allWorkouts.map((workout, i) => (
-        <div key={i}>
-          <Link as={`/workouts/${workout.slug}`} href="/workouts/[slug]">
-            {workout.title}
-          </Link>
-        </div>
-      ))}
-      <Blog heading="Workouts" subHeading="Get weekly workouts in your inbox on how to get those gains."/>
+      <Blog
+        heading="Workouts"
+        subHeading="Get weekly workouts in your inbox on how to get those gains."
+        content={allWorkouts}
+      />
     </div>
   );
 }

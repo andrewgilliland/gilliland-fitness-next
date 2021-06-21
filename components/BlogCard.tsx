@@ -1,14 +1,16 @@
-export default function BlogCard() {
+import Link from "next/link";
+
+export default function BlogCard({ content }) {
   return (
     <div>
-      <div className="dark:text-gray-400">June 4, 2021</div>
-      <h3 className="font-semibold text-xl dark:text-gray-50 mt-2">Title</h3>
-      <p className="dark:text-gray-400 mt-4">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-        ratione blanditiis quo animi magni beatae dolorum eum voluptate, aut
-        voluptas?
-      </p>
-      <div className="dark:text-purple-500 mt-4">Read full workout</div>
+      <div className="text-gray-400 text-gray-400">{content.date}</div>
+      <h3 className="font-semibold text-xl text-gray-900 dark:text-gray-50 mt-2">
+        {content.title}
+      </h3>
+      <p className="text-gray-400 my-3">{content.excerpt}</p>
+      <Link as={`/workouts/${content.slug}`} href="/workouts/[slug]">
+        <a className="font-semibold text-purple-500">Read full workout</a>
+      </Link>
     </div>
   );
 }

@@ -1,10 +1,11 @@
 type Props = {
   name: string;
-  label: string;
+  label?: string;
   type: string;
   id: string;
   placeholder: string;
   required: boolean;
+  marginTop?: string;
 };
 
 export default function Input({
@@ -14,6 +15,7 @@ export default function Input({
   id,
   placeholder,
   required,
+  marginTop
 }: Props) {
   return (
     <div>
@@ -23,7 +25,7 @@ export default function Input({
       >
         {label}
       </label>
-      <div className="mt-1 relative rounded-md shadow-sm">
+      <div className={`relative rounded-md shadow-sm ${marginTop}`}>
         <input
           type={type}
           name={name}

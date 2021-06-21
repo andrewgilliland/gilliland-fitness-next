@@ -16,6 +16,7 @@ export default function ContactForm() {
                 id="firstName"
                 placeholder="Jane"
                 required={true}
+                marginTop="mt-1"
               />
             </div>
             <div className="col-span-6 sm:col-span-3">
@@ -26,6 +27,7 @@ export default function ContactForm() {
                 id="lastName"
                 placeholder="Doe"
                 required={true}
+                marginTop="mt-1"
               />
             </div>
             <div className="col-span-6 sm:col-span-4">
@@ -36,6 +38,7 @@ export default function ContactForm() {
                 id="email"
                 placeholder="test@example.com"
                 required={true}
+                marginTop="mt-1"
               />
             </div>
             <div className="col-span-6">
