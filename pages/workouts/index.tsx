@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import { getAllWorkouts } from "../../lib/api";
+import Header from "../../components/sections/generics/Header";
+import Blog from "../../components/sections/generics/Blog";
 
 export default function WorkoutsPage({ allWorkouts }) {
   //   const heroWorkout = allWorkouts[0];
@@ -11,7 +13,11 @@ export default function WorkoutsPage({ allWorkouts }) {
       <Head>
         <title>Workouts | Gilliland Fitness</title>
       </Head>
-      <h1>Workouts</h1>
+      <Header
+        heading="Workouts"
+        subHeading="Take control of your team."
+        copy="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium dicta ut qui quas praesentium incidunt?"
+      />
       {/* <div>{heroWorkout && <div>{heroWorkout.title}</div>}</div> */}
       {allWorkouts.map((workout, i) => (
         <div key={i}>
@@ -20,6 +26,7 @@ export default function WorkoutsPage({ allWorkouts }) {
           </Link>
         </div>
       ))}
+      <Blog heading="Workouts" subHeading="Get weekly workouts in your inbox on how to get those gains."/>
     </div>
   );
 }

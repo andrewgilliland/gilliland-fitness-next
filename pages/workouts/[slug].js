@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { getWorkoutBySlug, getAllWorkouts } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
 
-export default function Post({ workout, morePosts, preview }) {
+export default function Workout({ workout, morePosts, preview }) {
   const router = useRouter();
   if (!router.isFallback && !workout?.slug) {
     return <div>error</div>;
@@ -18,8 +18,9 @@ export default function Post({ workout, morePosts, preview }) {
             <title>{workout.title} | Gilliland Fitness</title>
             <meta property="og:image" content={workout.ogImage.url} />
           </Head>
-          <article className="mb-32">
+          <article className="flex flex-col justify-center items-center">
             <h1>{workout.title}</h1>
+            <div>{workout.author.name}</div>
             <div>{workout.coverImage}</div>
             <div>{workout.date}</div>
           </article>

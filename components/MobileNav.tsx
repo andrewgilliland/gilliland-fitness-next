@@ -13,7 +13,7 @@ export default function MobileNav({ toggle, isOpen }: Props) {
         <Link href="/">Home</Link>
       </NavLink>
       <NavLink toggle={toggle}>
-        <Link href="/pricing">Pricing</Link>
+        <Link href="/workouts">Workouts</Link>
       </NavLink>
       <NavLink toggle={toggle}>
         <Link href="/contact">Contact</Link>
