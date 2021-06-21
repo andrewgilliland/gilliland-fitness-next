@@ -40,13 +40,14 @@ export async function getStaticProps({ params }) {
     "ogImage",
     "coverImage",
   ]);
-  const content = await markdownToHtml(workout.content || "");
+
+  // const content = await markdownToHtml(workout.content || "");
 
   return {
     props: {
       workout: {
         ...workout,
-        content,
+        // content,
       },
     },
   };
