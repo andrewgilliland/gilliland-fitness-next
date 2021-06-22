@@ -29,6 +29,9 @@ export default function ThemeToggle({ mobile }) {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             aria-hidden="true"
           >
             {clicked ? (

@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { getWorkoutBySlug, getAllWorkouts } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
+import WorkoutBody from "../../components/WorkoutBody";
 
 export default function Workout({ workout, morePosts, preview }) {
   const router = useRouter();
@@ -19,10 +20,13 @@ export default function Workout({ workout, morePosts, preview }) {
             <meta property="og:image" content={workout.ogImage.url} />
           </Head>
           <article className="flex flex-col justify-center items-center">
-            <h1>{workout.title}</h1>
-            <div>{workout.author.name}</div>
-            <div>{workout.coverImage}</div>
-            <div>{workout.date}</div>
+            <div>
+              <h1>{workout.title}</h1>
+              <div>{workout.author.name}</div>
+              <div>{workout.coverImage}</div>
+              <div>{workout.date}</div>
+            </div>
+            <WorkoutBody content={workout.content} />
           </article>
         </>
       )}
