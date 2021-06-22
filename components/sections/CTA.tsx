@@ -1,5 +1,5 @@
-import Container from "../../Container";
-import Button from "../../buttons/Button";
+import Container from "../Container";
+import Button from "../buttons/Button";
 
 export default function CTA() {
   return (

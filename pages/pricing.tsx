@@ -1,5 +1,5 @@
 import Head from "next/head";
-import PricingHeader from "../components/sections/PricingHeader";
+import Header from "../components/sections/Header";
 
 export default function PricingPage() {
   return (
@@ -7,7 +7,12 @@ export default function PricingPage() {
       <Head>
         <title>Pricing | Gilliland Fitness</title>
       </Head>
-      <PricingHeader />
+      <Header
+        heading="Pricing"
+        subHeading="Take control of your team."
+        mainContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Accusantium dicta ut qui quas praesentium incidunt?"
+      />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import { getAllWorkouts } from "../../lib/api";
-import Header from "../../components/sections/generics/Header";
-import Blog from "../../components/sections/generics/Blog";
+import Header from "../../components/sections/Header";
+import Blog from "../../components/sections/Blog";
 
 export default function WorkoutsPage({ allWorkouts }) {
   //   const heroWorkout = allWorkouts[0];

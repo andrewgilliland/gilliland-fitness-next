@@ -1,6 +1,6 @@
-import Container from "../../Container";
-import BlogCard from "../../BlogCard";
-import SubscribeForm from "../../forms/SubscribeForm";
+import Container from "../Container";
+import BlogCard from "../BlogCard";
+import SubscribeForm from "../forms/SubscribeForm";
 
 export default function Header({ heading, subHeading, content }) {
   return (

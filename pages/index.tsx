@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Hero from "../components/sections/Hero";
-import Feature from "../components/sections/generics/Feature";
-import CTA from "../components/sections/generics/CTA";
+import Feature from "../components/sections/Feature";
+import CTA from "../components/sections/CTA";
 
 export default function Home() {
   return (
@@ -10,7 +10,11 @@ export default function Home() {
         <title>Gilliland Fitness</title>
       </Head>
       <Hero />
-      <Feature />
+      <Feature
+        heading="Workouts"
+        subHeading="A better way to get workouts"
+        mainContent="Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam."
+      />
       <CTA />
     </div>
   );
