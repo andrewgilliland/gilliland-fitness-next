@@ -4,9 +4,10 @@ type Props = {
 
 const WorkoutBody = ({ content }: Props) => {
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto my-12">
       <div
         // className={markdownStyles['markdown']}
+        className="prose dark:prose-dark lg:prose-lg"
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </div>
@@ -14,4 +15,3 @@ const WorkoutBody = ({ content }: Props) => {
 };
 
 export default WorkoutBody;
-
