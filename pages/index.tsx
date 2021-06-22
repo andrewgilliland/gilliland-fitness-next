@@ -9,6 +9,7 @@ export default function Home() {
       <Head>
         <title>Gilliland Fitness</title>
       </Head>
+      
       <Hero />
       <Feature
         heading="Workouts"
