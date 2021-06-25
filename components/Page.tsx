@@ -1,4 +1,3 @@
-import Banner from "./Banner";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -12,7 +11,6 @@ export default function Page({ children }: Props) {
       className="grid min-h-screen relative"
       style={{ gridTemplateRows: "auto 1fr auto" }}
     >
-      <Banner />
       <Header />
       <div>{children}</div>
       <Footer />
