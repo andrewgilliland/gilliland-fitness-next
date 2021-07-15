@@ -23,7 +23,6 @@ export default function Header() {
           <Link href="/">Gilliland Fitness</Link>
         </h1>
         <Nav />
-        {/* TODO: Light/Dark Toggle */}
         <ThemeToggle mobile={false} />
         <button
           type="button"
