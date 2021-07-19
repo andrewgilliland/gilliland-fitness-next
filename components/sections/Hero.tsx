@@ -1,14 +1,21 @@
+import Image from 'next/image'
 import Container from "../Container";
 
 export default function Hero() {
   return (
-    <Container>
-      <main className="mt-16 px-8">
+    <div className="relative overflow-hidden">
+
+    {/* <Container> */}
+      <main className="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+      <div className="sm:text-center lg:text-left">
+
+        <div className="max-w-md">
+
         <h1 className="text-4xl tracking-tight font-bold sm:text-5xl md:text-6xl">
           <span className="block text-gray-900 dark:text-gray-50 xl:inline">
             Lorem ipsum dolor sit{" "}
           </span>
-          <span className="block text-purple-600 xl:inline">
+          <span className="block xl:inline bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-600">
             amet consectetur.
           </span>
         </h1>
@@ -18,7 +25,15 @@ export default function Hero() {
           cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
           aliqua.
         </p>
+        </div>
+
+        
+        </div>
       </main>
-    </Container>
+      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 filter brightness-75">
+        <Image className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="/dumbbells-1.jpg" alt="Dumbbells on plyobox" layout="fill" />
+      </div>
+    {/* </Container> */}
+          </div>
   );
 }

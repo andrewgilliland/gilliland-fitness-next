@@ -1,18 +1,19 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useAuth } from '../../lib/auth';
-import Container from '../../components/Container'
+import { useAuth } from '../lib/auth';
+import Container from '../components/Container'
 
-const Login = () => {
+const SignUp = () => {
   const [ loading, setLoading ] = useState(false);
-  const { createUserWithEmailAndPassword ,signInWithEmailAndPassword, user } = useAuth();
+  const { createUserWithEmailAndPassword, user } = useAuth();
   const { handleSubmit, register, errors } = useForm();
 
   const onLogin = ({ email, password }) => {
     setLoading(true);
-    signInWithEmailAndPassword(email, password).catch((error) => {
+    createUserWithEmailAndPassword(email, password).catch((error) => {
       setLoading(false);
     });
+    setLoading(true);
   };
 
   return (
@@ -59,7 +60,7 @@ const Login = () => {
         :
         (
           <span>
-            Login
+            SignUp
           </span>
         )
         }
@@ -69,10 +70,10 @@ const Login = () => {
   );
 };
 
-const LoginPage = () => (
+const SignUpPage = () => (
     <Container>
-        <Login />
+        <SignUp />
     </Container>
 );
 
-export default LoginPage;
+export default SignUpPage;
