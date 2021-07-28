@@ -2,7 +2,7 @@ import Container from "../Container";
 
 export default function Feature({heading, subHeading, mainContent}) {
   return (
-    <div className="py-12 bg-white dark:bg-gray-900">
+    <div className="relative py-12">
       <Container>
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">

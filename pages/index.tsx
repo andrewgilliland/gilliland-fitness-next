@@ -1,15 +1,15 @@
 import Head from "next/head";
-import Hero from "../components/sections/Hero";
-import Feature from "../components/sections/Feature";
-import CTA from "../components/sections/CTA";
+import Hero from "@/components/sections/Hero";
+import Feature from "@/components/sections/Feature";
+import CTA from "@/components/sections/CTA";
 
 export default function Home() {
+
   return (
     <div>
       <Head>
         <title>Gilliland Fitness</title>
       </Head>
-      
       <Hero />
       <Feature
         heading="Workouts"

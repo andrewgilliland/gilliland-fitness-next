@@ -6,6 +6,7 @@
       "@/components/*": ["components/*"],
       "@/lib/*": ["lib/*"],
       "@/utils/*": ["utils/*"],
+      "@/services/*": ["services/*"],
       "@/styles/*": ["styles/*"],
     },
     "target": "es5",

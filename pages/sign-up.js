@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useAuth } from '../lib/auth';
-import Container from '../components/Container'
+import { useAuth } from '@/lib/auth';
+import Container from '@/components/Container'
 
 const SignUp = () => {
   const [ loading, setLoading ] = useState(false);

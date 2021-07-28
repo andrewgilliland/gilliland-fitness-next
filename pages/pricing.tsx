@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header from "../components/sections/Header";
+import Header from "@/components/sections/Header";
 
 export default function PricingPage() {
   return (
